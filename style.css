@@ -946,7 +946,7 @@ body {
 }
 .text-center p{
    color:  white;
-   font-weight:bold
+   /* font-weight:bold */
 }
 .text-content .title1,.sub-title{
     background-color: #5A6271;
@@ -3313,4 +3313,13 @@ text-decoration: underline;
 .video-banner{
     background-color: black;
     opacity: 0.8;
+}
+.logoleft{
+    margin: 100px;
+}
+.logoss{
+    /* background-color: red; */
+    display: flex;
+    
+
 }
