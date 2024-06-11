@@ -893,7 +893,7 @@ p{
 .slider-area .text-content, .background-area .text-content, .table-cell {display: table-cell; vertical-align: middle;}
 .banner-content h1 {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 64px;
     padding-bottom: 41px;
     position: relative;
@@ -1538,10 +1538,9 @@ border-radius: 6px;
 
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(34, 30, 31, 0.3);
-    
     border-bottom: 2px solid rgba(34, 30, 31, 0.3);
     border-color: #34495E;
-    height: 450px;
+    height: 490px;
     margin-bottom: 5px;
 }
 /*----------------------------------------*/
@@ -1627,7 +1626,7 @@ border-radius: 6px;
 .footer-widget-area {
     background: #2d3e50 none repeat scroll 0 0;
     color: #ffffff;
-    padding: 80px 0 65px;
+    /* padding: 80px 0 65px; */
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -3329,12 +3328,13 @@ text-decoration: underline;
     opacity: 0.9;
 }
 .video-banner{
-    /* background-color: black; */
-    background-color: rgb(52, 73, 94);
+    background-color: black;
+    /* background-color: rgb(52, 73, 94); */
      opacity: 0.7;
 }
 .logoleft{
     margin: 100px;
+    background-color: red;
 }
 .logoss{
     /* background-color: red; */
@@ -3347,17 +3347,20 @@ text-decoration: underline;
 }
 
 .vision,.mission,.value{
-    border: 1px solid rgb(52, 73, 94);
+    /* border: 1px solid rgb(52, 73, 94); */
     /* border-color:rgb(255, 255, 255); */
     padding: 5px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .vision h1,.mission h1,.value h1{
     color: rgb(52, 73, 94);
     display: flex;
     align-items: center;
+    padding: 10px 0 15px;
+    font-size: 25px;
     justify-content: center;
+     
 
 }
 .vision p,.mission p,.value p{
@@ -3366,4 +3369,16 @@ text-decoration: underline;
     align-items: center;
     justify-content: center;
 
+}
+
+.single-goal {
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(34, 30, 31, 0.3);
+    
+    border-top: 5px solid rgba(34, 30, 31, 0.3);
+    border-color: #34495E;
+    /* height: 450px; */
+    margin-bottom: 5px;
+    padding: 10px;
+    height: 100%;
 }
