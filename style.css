@@ -3382,3 +3382,15 @@ text-decoration: underline;
     padding: 10px;
     height: 100%;
 }
+
+.Rwamo{
+    background-color: black;
+    font-weight: bold;
+    /* font-size: 2rem; */
+    
+}
+
+.meanclose{
+    /* background-color: red; */
+    color: white;
+}
