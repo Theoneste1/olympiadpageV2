@@ -160,6 +160,7 @@ ul{
 }
 body, html, p {
     font-family: Inter, sans-serif;
+    
 }
 html{
     overflow-x: hidden;
@@ -1289,9 +1290,13 @@ p{
     background: #f6f6f6 none repeat scroll 0 0;
 border-radius: 6px;
     border-bottom: 2px solid #86bc42;
+    color: #2d3e50;
+    /* background-color: red; */
+   
     overflow: hidden;
     padding: 30px 0 27px 35px;
 }
+
 
 /* Theoneste's */
 .single-latest-image{
@@ -2432,7 +2437,10 @@ span.comment-time {padding-right: 3px; position: relative;}
     line-height: 23px;
     margin-bottom: 23px;
 }
-.news-details-content .single-latest-text {padding: 75px 72px 0;}
+.news-details-content .single-latest-text {
+    padding: 75px 72px 0;
+    background-color: red;
+}
 .news-details-content .single-latest-item .single-item-comment-view {margin-bottom: 8px;}
 .quote-section {
     background: #efefef none repeat scroll 0 0;
@@ -3321,7 +3329,8 @@ text-decoration: underline;
     opacity: 0.9;
 }
 .video-banner{
-    background-color: black;
+    /* background-color: black; */
+    background-color: rgb(52, 73, 94);
      opacity: 0.7;
 }
 .logoleft{
@@ -3335,4 +3344,26 @@ text-decoration: underline;
 .link a{
     color: green;
     font-weight: 400;
+}
+
+.vision,.mission,.value{
+    border: 1px solid rgb(52, 73, 94);
+    /* border-color:rgb(255, 255, 255); */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.vision h1,.mission h1,.value h1{
+    color: rgb(52, 73, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.vision p,.mission p,.value p{
+    color: rgb(52, 73, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
