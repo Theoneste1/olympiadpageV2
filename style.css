@@ -2438,7 +2438,7 @@ span.comment-time {padding-right: 3px; position: relative;}
 }
 .news-details-content .single-latest-text {
     padding: 75px 72px 0;
-    background-color: red;
+    /* background-color: red; */
 }
 .news-details-content .single-latest-item .single-item-comment-view {margin-bottom: 8px;}
 .quote-section {
@@ -3277,7 +3277,7 @@ color: white;
     position: relative; /* Establishes a containing block for absolutely positioned children */
             width: 100%;
             height: 950px;
-            background-color: red;
+            /* background-color: red; */
   }
   .background {
     position: absolute;
