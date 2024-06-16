@@ -3181,7 +3181,7 @@ color: white;
 
 .text-content p{
  font-size: 20px;
- padding: 10px;
+ padding: 10px 0;
  padding-bottom: 20px;
 }
 
@@ -3354,17 +3354,20 @@ text-decoration: underline;
     /* border-radius: 10px; */
 }
 .vision h1,.mission h1,.value h1{
-    color: rgb(52, 73, 94);
+    background-image: linear-gradient(rgb(3, 63, 3), #0a2642);
+    color: whitesmoke;
     display: flex;
+    border-radius: 5px;
     align-items: center;
     padding: 10px 0 15px;
+    margin: 10px 0 20px;
     font-size: 25px;
     justify-content: center;
      
 
 }
 .vision p,.mission p,.value p{
-    color: rgb(52, 73, 94);
+    /* color: rgb(52, 73, 94); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3374,14 +3377,22 @@ text-decoration: underline;
 .single-goal {
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(34, 30, 31, 0.3);
-    
+    background-image: linear-gradient(rgb(3, 63, 3), #0a2642);
     border-top: 5px solid rgba(34, 30, 31, 0.3);
     border-color: #34495E;
+    color: white;
     /* height: 450px; */
     margin-bottom: 5px;
-    padding: 10px;
+    padding: 0px 10px;
+    /* padding-left: 20px; */
     height: 100%;
 }
+
+.olympiad{
+    
+    color: white;
+}
+
 
 .Rwamo{
     background-color: black;
@@ -3389,8 +3400,14 @@ text-decoration: underline;
     /* font-size: 2rem; */
     
 }
+.event h4{
+    padding: 10px 0px;
 
-.meanclose{
-    /* background-color: red; */
-    color: white;
 }
+.event p:hover{
+    background-image:linear-gradient(rgb(3, 63, 3), #0a2642) ;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
