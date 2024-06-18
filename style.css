@@ -3354,9 +3354,11 @@ text-decoration: underline;
     /* border-radius: 10px; */
 }
 .vision h1,.mission h1,.value h1{
-    background-image: linear-gradient(rgb(3, 63, 3), #0a2642);
     color: whitesmoke;
     display: flex;
+    /* border-style: solid; */
+    border-bottom-color: white;
+    border-bottom: solid;
     border-radius: 5px;
     align-items: center;
     padding: 10px 0 15px;
@@ -3377,7 +3379,7 @@ text-decoration: underline;
 .single-goal {
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(34, 30, 31, 0.3);
-    background-image: linear-gradient(rgb(3, 63, 3), #0a2642);
+    background-color:#0a2642;
     border-top: 5px solid rgba(34, 30, 31, 0.3);
     border-color: #34495E;
     color: white;
@@ -3405,7 +3407,7 @@ text-decoration: underline;
 
 }
 .event p:hover{
-    background-image:linear-gradient(rgb(3, 63, 3), #0a2642) ;
+    background-color:#0a2642 ;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
