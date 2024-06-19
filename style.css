@@ -3413,3 +3413,12 @@ text-decoration: underline;
     border-radius: 10px;
 }
 
+/* .footer-logo{
+    color:red;
+    background-color: black;
+} */
+
+.loggs{
+    background-color: red;
+    padding-bottom:-30px;
+}
