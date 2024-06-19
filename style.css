@@ -197,7 +197,7 @@ p{
     position: relative
 }
 .section-title h3 {
-    color: #2d3e50;
+    color: #34495E;
     font-size: 30px;
     line-height: 22px;
     margin-bottom: 10px;
@@ -1194,7 +1194,7 @@ p{
 .sponsors {
     /* background: rgba(0, 0, 0, 0) url("img/banner/2.jpg") repeat scroll 0 0; */
   /* background-color: #f6f6f6 none repeat scroll 0 0; */
-  background-color:#343a40;
+  background-color:#34495E;
     color: #171515;
     padding-top: 20px;
     padding-bottom: 0px;
@@ -3328,7 +3328,7 @@ text-decoration: underline;
     opacity: 0.9;
 }
 .video-banner{
-    background-color: black;
+    background-color: #34495E;
     /* background-color: rgb(52, 73, 94); */
      opacity: 0.7;
 }
@@ -3379,7 +3379,7 @@ text-decoration: underline;
 .single-goal {
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(34, 30, 31, 0.3);
-    background-color:#0a2642;
+    background-color:#34495E;
     border-top: 5px solid rgba(34, 30, 31, 0.3);
     border-color: #34495E;
     color: white;
@@ -3397,7 +3397,7 @@ text-decoration: underline;
 
 
 .Rwamo{
-    background-color: black;
+    background-color: #34495E;
     font-weight: bold;
     /* font-size: 2rem; */
     
@@ -3407,7 +3407,7 @@ text-decoration: underline;
 
 }
 .event p:hover{
-    background-color:#0a2642 ;
+    background-color:#34495E ;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -3418,7 +3418,8 @@ text-decoration: underline;
     background-color: black;
 } */
 
-.loggs{
-    background-color: red;
-    padding-bottom:-30px;
+.logrow{
+  
+    margin-top: -50px;
+  
 }
