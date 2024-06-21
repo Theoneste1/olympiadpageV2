@@ -3429,21 +3429,29 @@ text-decoration: underline;
 .CALENDAR p{
     font-size: 18px;
     background-color: rgb(244, 235, 235);
+    background-color: whitesmoke;
+    box-shadow: 2px 5px 25px rgba(34, 30, 31, 0.25);
     color:#34495E;
 }
 /* .CALENDAR button{
     background-color: #34495E;
 } */
 
-.CALENDAR paragraph{
+.CALENDAR p{
     overflow: hidden;
     margin-bottom: 50px;
     /* background-color: #f6f6f6 ; */
-    background-color: red;
+    /* background-color: red; */
     border-radius: 6px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   
     border-bottom: #2D3E50 solid;
 }
-.CALENDAR p:hover {box-shadow: 2px 5px 25px rgba(34, 30, 31, 0.25);}
+.CALENDAR p:hover {box-shadow: 4px 10px 50px rgba(34, 30, 31, 0.25);}
+.date{
+    background-color: #2D3E50;
+    color: white;
+    padding: 5px;
+    
+}
