@@ -3402,16 +3402,19 @@ text-decoration: underline;
     /* font-size: 2rem; */
     
 }
-.event h4{
+.event h4,h2,h3{
     padding: 10px 0px;
+    color:#34495E;
 
 }
+
+
 .event p{
-    background-color:#34495E ;
-    color: white;
+    color:#34495E ;
+    /* color: white; */
     padding: 10px 20px;
     border-radius: 10px;
-}
+} 
 
 /* .footer-logo{
     color:red;
@@ -3424,20 +3427,22 @@ text-decoration: underline;
   
 }
 .CALENDAR h4{
-    font-size: 18px;
+    font-size: 17px;
 }
-.CALENDAR p{
+
+
+.modelsummary p{
     font-size: 18px;
     background-color: rgb(244, 235, 235);
     background-color: whitesmoke;
     box-shadow: 2px 5px 25px rgba(34, 30, 31, 0.25);
     color:#34495E;
 }
-/* .CALENDAR button{
+.btn-info {
     background-color: #34495E;
-} */
+}
 
-.CALENDAR p{
+.modelsummary p{
     overflow: hidden;
     margin-bottom: 50px;
     /* background-color: #f6f6f6 ; */
@@ -3448,10 +3453,53 @@ text-decoration: underline;
   
     border-bottom: #2D3E50 solid;
 }
-.CALENDAR p:hover {box-shadow: 4px 10px 50px rgba(34, 30, 31, 0.25);}
+.modelsummary p:hover {box-shadow: 4px 10px 50px rgba(34, 30, 31, 0.25);}
+
 .date{
     background-color: #2D3E50;
     color: white;
+    font-size: 14px;
     padding: 5px;
+    border-radius: 3px;
     
+}
+
+.modelBody{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.modelBody h2{
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+
+}
+
+.modelBody h1{
+    color: #2c3e50;
+    text-align: center;
+}
+
+.modelBody ul{
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+
+
+}
+.modelBody p{
+    margin: 10px 0;
+}
+
+.smalltitle{
+    font-weight: 900;
+    color: #34495e;
 }
