@@ -1073,6 +1073,7 @@ p{
     margin-bottom: 79px;
     padding-top: 22px;
     z-index: 9;
+    color: white;
     position: relative;
 }
 .about-area p {
@@ -1565,7 +1566,7 @@ border-radius: 6px;
     top: -20px;
 }
 .newsletter-content h2, .newsletter-content h3 {font-family: raleway; font-weight: 700; font-size: 30px}
-.newsletter-content > h3 {margin-bottom: 2px; font-size: 24px}
+.newsletter-content > h3 {margin-bottom: 2px; font-size: 24px; color:white}
 .subscribe-form input {
     color: #696969;
     height: 100%;
@@ -1656,6 +1657,7 @@ border-radius: 6px;
     margin-bottom: 37px;
     padding-top: 12px;
     text-transform: uppercase;
+    color: white;
 }
 .single-footer-widget > span {display: block; margin-bottom: 11px;}
 .single-footer-widget > span i {font-size: 18px; width: 30px;}
@@ -2729,7 +2731,7 @@ span.c-text {display: inline-block;}
     margin-bottom: 23px;
 }
 .footer-info-container {border-bottom: 1px solid #e1e1e1;}
-.single-footer-widget > h4 {
+.single-footer-widget > h4,h3 {
     color: #ffffff;
     font-size: 14px;
     font-weight: 600;
@@ -3440,7 +3442,10 @@ text-decoration: underline;
 }
 .btn-info {
     background-color: #34495E;
+    display: flex;
+    align-items: center;
 }
+
 
 .modelsummary p{
     overflow: hidden;
@@ -3462,7 +3467,9 @@ text-decoration: underline;
     padding: 5px;
     border-radius: 3px;
     
-}
+} 
+ 
+
 
 .modelBody{
     font-family: Arial, sans-serif;
@@ -3502,4 +3509,21 @@ text-decoration: underline;
 .smalltitle{
     font-weight: 900;
     color: #34495e;
+}
+
+.logofooter{
+    padding: 0px;
+    text-align: center;
+}
+
+
+.log-inner {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+.log-inner img {
+    display: block; /* Remove the default inline spacing of the img */
+            width: 100%;
+            height: auto;
 }
