@@ -10,6 +10,9 @@
     font-family: Arial, sans-serif;
     box-shadow: 0 2px 20px rgba(34, 30, 31, 0.4);
 }
+.form-container button{
+    background-color: #2D3E50;
+}
 .form-group {
     margin-bottom: 15px;
 }
@@ -19,15 +22,15 @@ label {
     font-size: 12px;
     font-weight: bold;
 }
-form-container textarea{
+/* form-container textarea{
     width: 100%;
     padding: 8px;
     font-size: 16px;
     border: 1px white;
     border-radius: 4px;
-    color:#2D3E50;
-}
-form-container select, input[type="text"], input[type="number"],input[type="email"] {
+    color:#2D3E50; */
+/* } */
+select{
     width: 100%;
     padding: 8px;
     font-size: 16px;
@@ -35,9 +38,32 @@ form-container select, input[type="text"], input[type="number"],input[type="emai
     border-radius: 4px;
     color:#2D3E50;
 }
+option{
+    color:#2D3E50; 
+}
+textarea{
+    color: #2D3E50;
+    max-width: 100%;
+}
+
+form-container
+textarea, 
+input[type="textarea"], 
+input[type="number"], 
+input[type="email"], 
+input[type="file"], 
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color:#2D3E50;
+    background-color: white;
+  
+}
 form-container button {
     background-color: #4CAF50;
-    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -57,8 +83,3 @@ form-container button:hover {
 #competition2, #competition-teacher-no{
     margin-left: 40px;
 }
-
-/* .footer-widget-area button,input{
-    background-color: red;
-    border-radius: 0px;
-} */
