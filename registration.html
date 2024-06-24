@@ -41,6 +41,8 @@
 		<!-- Style CSS
 		============================================ -->
         <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="registrationform.css">
         
 		<!-- Color CSS
 		============================================ -->
@@ -279,7 +281,7 @@
                             <h3> COMING SOON!</h3>
 
                             <div class="form-container">
-                                <h2>School Competition Registration Form</h2>
+                                <h2>Mathematics Competition Registration</h2>
                                 <form action="submit.php" method="post">
                                     <div class="form-group">
                                         <label for="email">Email address:</label>
@@ -287,7 +289,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="school-type">What type of school:</label>
-                                        <input type="text" id="school-type" name="school_type" required>
+                                        <select id="school-type" name="school_type" required>
+                                            <option value="">Select school type...</option>
+                                            <option value="Primary">Primary</option>
+                                            <option value="Secondary">Secondary</option>
+                                            <option value="High School">High School</option>
+                                            <option value="Other">Other</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="school-name">School name:</label>
@@ -298,53 +306,112 @@
                                         <input type="text" id="teacher-name" name="teacher_name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="competition-participation">Will your school participate in the following competition?</label>
-                                        <input type="text" id="competition-participation" name="competition_participation" required>
+                                        <label>Will your school participate in the following competition?</label>
+                                        <input type="checkbox" id="competition1" name="competition[]" value="JRMC(s1 to S3)">
+                                        <label for="competition1"> JRMC (s1 to S3)</label><br>
+                                        <input type="checkbox" id="competition2" name="competition[]" value="Round1 in SRMC(s4 to S5)">
+                                        <label for="competition2"> Round1 in SRMC (s4 to S5)</label>
                                     </div>
                                     <div class="form-group">
                                         <label for="school-province">Choose the School province of your school:</label>
-                                        <input type="text" id="school-province" name="school_province" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="school-district">Choose your school district from the list:</label>
-                                        <select id="school-district" name="school_district" required>
-                                            <option value="">Select district...</option>
-                                            <option value="district1">District 1</option>
-                                            <option value="district2">District 2</option>
-                                            <option value="district3">District 3</option>
-                                            <!-- Add more options as needed -->
+                                        <select id="school-province" name="school_province" onchange="populateDistricts()" required>
+                                            <option value="">Select province...</option>
+                                            <option value="Eastern">Eastern</option>
+                                            <option value="Northern">Northern</option>
+                                            <option value="Southern">Southern</option>
+                                            <option value="Western">Western</option>
+                                            <!-- Add more provinces as needed -->
                                         </select>
                                     </div>
-                                    <!-- Repeat the district selection as necessary -->
+                        
                                     <div class="form-group">
-                                        <label for="school-sector">Enter the sector of your school:</label>
-                                        <input type="text" id="school-sector" name="school_sector" required>
+                                        <label for="school-district">Choose your school district from the list:</label>
+                                        <select id="school-district" name="school_district" onchange="populateSectors()" required>
+                                            <option value="">Select district...</option>
+                                        </select>
                                     </div>
+                        
+                                    <div class="form-group">
+                                        <label for="school-sector">Choose your school sector:</label>
+                                        <select id="school-sector" name="school_sector" required>
+                                            <option value="">Select sector...</option>
+                                        </select>
+                                    </div>
+                        
                                     <div class="form-group">
                                         <label for="head-teacher-name">Head teacher's name:</label>
                                         <input type="text" id="head-teacher-name" name="head_teacher_name" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="head-teacher-phone">Head Teacher's Phone contact:</label>
-                                        <input type="tel" id="head-teacher-phone" name="head_teacher_phone" required>
+                                        <input type="text" id="head-teacher-phone" name="head_teacher_phone" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="head-teacher-email">Head Teacher's email address:</label>
                                         <input type="email" id="head-teacher-email" name="head_teacher_email" required>
                                     </div>
-                                    <!-- Add more fields as needed -->
-                        
                                     <div class="form-group">
-                                        <label for="certify">I certify that all the information provided are correct:</label>
-                                        <input type="checkbox" id="certify" name="certify" required>
+                                        <label for="school-bank-account">School Bank account:</label>
+                                        <input type="text" id="school-bank-account" name="school_bank_account" required>
                                     </div>
-                        
+                                    <div class="form-group">
+                                        <label for="school-bank-name">School Bank name:</label>
+                                        <input type="text" id="school-bank-name" name="school_bank_name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="school-bank-branch">School Bank Branch Name:</label>
+                                        <input type="text" id="school-bank-branch" name="school_bank_branch" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="competition-teacher">Are you the teacher who will be responsible for the competition?</label><br>
+                                        <input type="radio" id="competition-teacher-yes" name="competition_teacher" value="Yes" required>
+                                        <label for="competition-teacher-yes"> Yes</label><br>
+                                        <input type="radio" id="competition-teacher-no" name="competition_teacher" value="No">
+                                        <label for="competition-teacher-no"> No</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="students-jrmc">How many students from your school are expected to attend the JRMC (s1 to S3)?</label>
+                                        <input type="number" id="students-jrmc" name="students_jrmc" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="students-srmc">How many students from your school are expected to attend Round1 in SRMC (s4 to S5)?</label>
+                                        <input type="number" id="students-srmc" name="students_srmc" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comments">Do you have any comment or suggestion?</label>
+                                        <textarea id="comments" name="comments" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" id="certify" name="certify" required>
+                                            I certify that all the information provided is correct.
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bank-screenshot">Bank account number screenshot or paper:</label><br>
+                                        <input type="file" id="bank-screenshot" name="bank_screenshot" accept=".png, .jpg, .jpeg, .pdf" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="school-code">School Code (for NESA Exams):</label>
+                                        <input type="text" id="school-code" name="school_code" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="teacher-phone-contact">Teacher's phone contact:</label>
+                                        <input type="text" id="teacher-phone-contact" name="teacher_phone_contact" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="teacher-email">Teacher's email address:</label>
+                                        <input type="email" id="teacher-email" name="teacher_email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="call-head-teacher">Do you want us to call your head teacher and why?</label><br>
+                                        <textarea id="call-head-teacher" name="call_head_teacher" rows="4"></textarea>
+                                    </div>
                                     <div class="form-group">
                                         <button type="submit">Submit</button>
                                     </div>
                                 </form>
                             </div>
-
                             
                             <!-- <div class="col-lg-6 col-md-12 col-12">
                                 <div class="single-latest-item">
@@ -649,6 +716,7 @@
 		<!-- main JS
 		============================================ -->		
         <script src="js/main.js"></script>
+        <script src="js/formJs/registration.js"></script>
     </body>
 
 <!-- Mirrored from htmldemo.hasthemes.com/educat-preview/educat/latest-news by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2023 20:01:28 GMT -->
