@@ -4,7 +4,8 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
         <!-- <title>Home Nine || Educat</title> -->
         <title>Rwanda Mathematics Olympiad</title>
 
@@ -632,10 +633,109 @@
                                          -solving techniques, effective coaching methods, resource management, motivational strategies, and professional skills.
                                           They also foster collaboration and networking opportunities among coaches. This training guarantees high-quality mentorship, 
                                         thereby improving students' competition outcomes and overall mathematical growth. Registration is open to anyone interested in becoming an Olympiad coach.
-                                        <span class="button-default">Join</span>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal80">READ MORE</button>
+                                    
+                                    </p>
 
 
-                                       </p>
+                                        <!-- Modal -->
+                                    <div class="modal fade" id="myModal80" role="dialog">
+                                        <div class="modal-dialog">
+                                        
+                                          <!-- Modal content-->
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <h4 class="modal-title"><br> COACH APPLICATION FORM: </h4>
+                                            </div>
+                                            <div class="modal-body">
+  
+                                              <div class="modelBody">
+                                              <h3>COACH APPLICATION FORM:</h3>
+
+                                              <div class="form-container">
+                                                <h3>Mathematics Olympiad Coach Registration Form</h3>
+                                                <form action="submit_coach.php" method="post">
+                                                    <div class="form-group">
+                                                        <label for="email">Email address:</label>
+                                                        <input type="email" id="email" name="email" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="full-name">Full Name:</label>
+                                                        <input type="text" id="full-name" name="full_name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="phone-number">Phone Number:</label>
+                                                        <input type="text" id="phone-number" name="phone_number" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="school-province">Choose your province:</label>
+                                                        <select id="school-province" name="province" onchange="populateDistricts()" required>
+                                                            <option value="">Select province...</option>
+                                                            <option value="Eastern">Eastern</option>
+                                                            <option value="Northern">Northern</option>
+                                                            <option value="Southern">Southern</option>
+                                                            <option value="Western">Western</option>
+                                                            <!-- Add more provinces as needed -->
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="school-district">Choose your district:</label>
+                                                        <select id="school-district" name="district" onchange="populateSectors()" required>
+                                                            <option value="">Select district...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="school-sector">Choose your sector:</label>
+                                                        <select id="school-sector" name="sector" required>
+                                                            <option value="">Select sector...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="experience">Mathematics Teaching Experience (in years):</label>
+                                                        <input type="number" id="experience" name="experience" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="qualifications">Qualifications:</label>
+                                                        <textarea id="qualifications" name="qualifications" rows="4" required></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="motivation">Why do you want to be a Mathematics Olympiad coach?</label>
+                                                        <textarea id="motivation" name="motivation" rows="4" required></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="cv-upload">Upload your CV:</label>
+                                                        <input type="file" id="cv-upload" name="cv_upload" accept=".pdf,.doc,.docx" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>
+                                                            <input type="checkbox" id="certify" name="certify" required>
+                                                            I certify that all the information provided is correct.
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- End of the container -->
+          
+                                        </div>
+   
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                      
+                                    <!-- </div> -->
+  
+  
+                                    <!-- End of the model -->
+
                                        <!-- <a href="#" class="button-default">Join</a>  -->
                                     </div>
                                 </div>
