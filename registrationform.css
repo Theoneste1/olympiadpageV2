@@ -19,7 +19,7 @@ label {
     font-size: 12px;
     font-weight: bold;
 }
-textarea{
+form-container textarea{
     width: 100%;
     padding: 8px;
     font-size: 16px;
@@ -27,7 +27,7 @@ textarea{
     border-radius: 4px;
     color:#2D3E50;
 }
-select, input[type="text"], input[type="number"],input[type="email"] {
+form-container select, input[type="text"], input[type="number"],input[type="email"] {
     width: 100%;
     padding: 8px;
     font-size: 16px;
@@ -35,7 +35,7 @@ select, input[type="text"], input[type="number"],input[type="email"] {
     border-radius: 4px;
     color:#2D3E50;
 }
-button {
+form-container button {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -44,7 +44,7 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
-button:hover {
+form-container button:hover {
     background-color: #45a049;
     box-shadow: 0 2px 20px rgba(34, 30, 31, 0.4);
 }
@@ -57,3 +57,8 @@ button:hover {
 #competition2, #competition-teacher-no{
     margin-left: 40px;
 }
+
+/* .footer-widget-area button,input{
+    background-color: red;
+    border-radius: 0px;
+} */
