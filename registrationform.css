@@ -1,0 +1,49 @@
+ /* Basic styling for the form */
+ .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2D3E50;
+    color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 20px rgba(34, 30, 31, 0.4);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+select, input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.togetherFom{
+   
+    display: flex;
+}
+
+#competition2, #competition-teacher-no{
+    margin-left: 40px;
+}
