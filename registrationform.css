@@ -23,7 +23,7 @@ textarea{
     width: 100%;
     padding: 8px;
     font-size: 16px;
-    /* border: 1px solid#2D3E50; */
+    border: 1px white;
     border-radius: 4px;
     color:#2D3E50;
 }
@@ -31,7 +31,7 @@ select, input[type="text"], input[type="number"],input[type="email"] {
     width: 100%;
     padding: 8px;
     font-size: 16px;
-    /* border: 1px solid#2D3E50; */
+    border: 1px solid white;
     border-radius: 4px;
     color:#2D3E50;
 }
@@ -46,6 +46,7 @@ button {
 }
 button:hover {
     background-color: #45a049;
+    box-shadow: 0 2px 20px rgba(34, 30, 31, 0.4);
 }
 
 .togetherFom{
