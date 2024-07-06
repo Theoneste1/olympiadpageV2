@@ -3434,6 +3434,25 @@ text-decoration: underline;
     font-size: 17px;
 }
 
+.modelsummary{
+  
+    height: 120px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.event{
+    /* background-color: red; */
+    margin-bottom:10px;
+}
+
+/* .modelsummary:hover{
+    border-radius: 6px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-bottom: #2D3E50 solid;
+} */
+
 
 .modelsummary p{
     font-size: 18px;
@@ -3532,4 +3551,8 @@ text-decoration: underline;
     display: block; /* Remove the default inline spacing of the img */
             width: 100%;
             height: auto;
+}
+
+.calender span{
+    
 }

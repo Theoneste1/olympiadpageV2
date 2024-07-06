@@ -85,3 +85,54 @@
             }
         }
     
+
+
+
+        // For the students / Coach
+
+        // Function to populate districts based on selected province
+        function populateDistricts1() {
+            const provinceSelect1 = document.getElementById("school-province1");
+            const districtSelect1 = document.getElementById("school-district1");
+            const selectedProvince1 = provinceSelect1.value;
+
+            // Clear current options
+            districtSelect1.innerHTML = '<option value="">Select district...</option>';
+
+            // Populate with new options based on selected province
+            if (selectedProvince1 && districtOptions[selectedProvince1]) {
+                districtOptions[selectedProvince1].forEach(function(district) {
+                    const option = document.createElement("option");
+                    option.text = district;
+                    option.value = district;
+                    districtSelect1.appendChild(option);
+                });
+            }
+
+            // Reset sectors when changing province
+            const sectorSelect1 = document.getElementById("school-sector1");
+            sectorSelect1.innerHTML = '<option value="">Select sector...</option>';
+        }
+
+        // Function to populate sectors based on selected district
+        function populateSectors1() {
+            const districtSelect1 = document.getElementById("school-district1");
+            const sectorSelect1 = document.getElementById("school-sector1");
+            const selectedDistrict1 = districtSelect1.value;
+
+            // Clear current options
+            sectorSelect1.innerHTML = '<option value="">Select sector...</option>';
+
+            // Populate with new options based on selected district
+            if (selectedDistrict1 && sectorOptions[selectedDistrict1]) {
+                sectorOptions[selectedDistrict1].forEach(function(sector) {
+                    const option = document.createElement("option");
+                    // Remove "Sector" from the sector name
+                    const sectorName = sector.replace(/Sector/g, "").trim();
+                    option.text = sectorName;
+                    option.value = sectorName;
+                    sectorSelect1.appendChild(option);
+                });
+            }
+        }
+    
