@@ -59,6 +59,9 @@
 		============================================ -->
         <link rel="stylesheet" href="style.css">
 
+        <!-- Table information -->
+        <link rel="stylesheet" href="css/table.css">
+
         <!-- form registration -->
          <link rel="stylesheet" href="registrationform.css">
         
@@ -1030,51 +1033,63 @@
                             <div class="col-md-12">
                                 <div class="table-event">
                                 <table id="tables">
+                                   
+                                    <thead>
+                                    <th>#</th>
+                                    <th><span><i class="zmdi zmdi-calendar-check test"></i>Date</span></th>
+                                    <th >Event</th>
+                                    <th style="width: 1%;">Students</th>
+                                    <th>More</th>
+                                    </thead>
+                                    
                                     <tbody>
                                     <tr>
-                                        <th>No</th>
-                                        <th><span><i class="zmdi zmdi-calendar-check test"></i>Date</span></th>
-                                        
-                                      
-                                      <th >Event</th>
-                                      <th style="width: 1%;">Students</th>
-                                      <th>More</th>
+                                     <td data-label="#:">1</td>
+                                      <td data-label="Date:"><span >Feb-May</span></td>
+                                      <td data-label="Event:">National Selection Test(RMC)</td>
+                                      <td data-label="Students:">+40000</td>
+                                      <td data-label=""><button type="button" 
+                                        class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal1">READ MORE</button></td>
+                                      <td class="empty"></td>
                                     </tr>
                                     <tr>
-                                        <td>1</td>
-                                      <td><span >Feb-May</span></td>
-                                      <td>National Selection Test(RMC)</td>
-                                      <td>+40000</td>
-                                      <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal1">READ MORE</button></td>
+                                      <td data-label="#:">2</td>
+                                      <td data-label="Date:"><span >Jul-Aug</span></td>
+                                      <td data-label="Event:">In-person and online camps</td>
+                                      <td data-label="Students:">+300</td>
+                                      <td data-label=""><button type="button" 
+                                        class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal2">READ MORE</button></td>
+                                        <td class="empty"></td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
-                                      <td><span >Jul-Aug</span></td>
-                                      <td>In-person and online camps</td>
-                                      <td>+300</td>
-                                      <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal2">READ MORE</button></td>
+
+                                     <td data-label="#:">3</td>
+                                      <td data-label="Date:"><span >Sep-Nov</span></td>
+                                      <td data-label="Event:">Online Mentorship</td>
+                                      <td data-label="Students:">+100</td>
+                                      <td data-label=""><button type="button" 
+                                        class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal3">READ MORE</button></td>
+                                        <td class="empty"></td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                      <td><span >Sep-Nov</span></td>
-                                      <td>Online Mentorship</td>
-                                      <td>+100</td>
-                                      <td> <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal3">READ MORE</button></td>
+                                        <td data-label="#:">4</td>
+                                      <td data-label="Date:"><span >Dec</span></td>
+                                      <td data-label="Event:">Invitetional Selection Test</td>
+                                      <td data-label="Students:">+60</td>
+                                      <td data-label=""><button type="button" 
+                                        class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal4">READ MORE</button></td>
+                                        <td class="empty"></td>
+
                                     </tr>
                                     <tr>
-                                        <td>4</td>
-                                      <td><span>Dec</span></td>
-                                      <td>Invitational Selection Test</td>
-                                      <td>+60</td>
-                                      <td> <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal4">READ MORE</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                      <td> <span>May-Jul</span></td>
-                                      <td>International competitions</td>
-                                      <td>+18</td>
-                                      <td> <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal9">READ MORE</button></td>
-                                     
+
+                                        <td data-label="#:">5</td>
+                                      <td data-label="Date:"><span >May-Jul</span></td>
+                                      <td data-label="Event:">International Competions</td>
+                                      <td data-label="Students:">+18</td>
+                                      <td data-label=""><button type="button" 
+                                        class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal5">READ MORE</button></td>
+                                        <td class="empty"></td>
                                     </tr>
                                 </tbody>
                                   </table>
