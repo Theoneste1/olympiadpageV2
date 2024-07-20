@@ -1227,6 +1227,7 @@ p{
 .footer-logo{
     background-color: white;
     display: flex;
+    height: 100px;
     justify-content: center;
     align-items: center;
     width: 290px;
