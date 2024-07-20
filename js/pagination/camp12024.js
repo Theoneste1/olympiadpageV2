@@ -1,7 +1,7 @@
 let SHEET_ID = '1_goCAnx9eFbY_hBHQpUggbWYQKWuKZrUPWP8s8zgpIM'
 // let SHEET_TITLE = 'teachers';
-let SHEET_TITLE = 'STATI';
-let SHEET_RANGE = 'A1:F29'
+let SHEET_TITLE = 'CAMP1';
+let SHEET_RANGE = 'A1:H40'
 
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/'+ SHEET_ID +'/gviz/tq?sheet='+SHEET_TITLE +'&range='+SHEET_RANGE);
 
@@ -30,11 +30,11 @@ let nextEndingPoint;
 
 
 function getCode(){
-    
-    return parseInt(document.getElementById('code').value);
-    
+    return document.getElementById('code').value;
+    // console.log("The code is", document.getElementById('code').value)
 }
 getCode()
+console.log(getCode())
 
 // If the code change please clean
 let getcodechange =document.getElementById('code')
@@ -50,41 +50,38 @@ fetch(FULL_URL)
 .then(rep => {
     data = JSON.parse(rep.substr(47).slice(0,-2)); 
     // console.log(data)
-    console.log(data.table.rows[1].c[2].v)
+    console.log(data.table.rows[1].c[4].v)
     
     length = data.table.rows.length;
     console.log("This is length ", length)
 
         table = document.createElement("table");
         table.border = "1";
-        Head = document.createElement("thead");
 
         //Add the header row.
         var row = table.insertRow(-1);
 
         //Add the header cells.
         var headerCell = document.createElement("TH");
-        headerCell.innerHTML = "#";
+        headerCell.innerHTML = "N";
         row.appendChild(headerCell);
-
 
         var headerCell = document.createElement("TH");
-        headerCell.innerHTML = "Event Name";
+        headerCell.innerHTML = "STUDENT NAME";
         row.appendChild(headerCell);
 
         headerCell = document.createElement("TH");
-        headerCell.innerHTML = "Students";
+        headerCell.innerHTML = "GE";
         row.appendChild(headerCell);
 
         headerCell = document.createElement("TH");
-        headerCell.innerHTML = "Ranked";
+        headerCell.innerHTML = "LE";
         row.appendChild(headerCell);
 
         headerCell = document.createElement("TH");
-        headerCell.innerHTML = "Award";
+        headerCell.innerHTML = "SCHOOL NAME";
         row.appendChild(headerCell);
 
-        // Head.appendChild(row);
    
    
     //function for loading pagination functionality
@@ -124,12 +121,7 @@ function getCountOfPages() {
         presentPage = 0;
         loadMyPaginationList();
         document.getElementById("first").disabled;
-
-        var element = document.getElementById("first");
-            element.style.display = "none";
-        var select = document.getElementById("select");
-        select.style.display = "none";
-
+        document.getElementById("announc").style="display:block"
     }
     //function for moving last page
     function getLastPage() {
@@ -139,7 +131,7 @@ function getCountOfPages() {
 
      //function for creating how to move between the pages
      function loadMyPaginationList() { 
-        document.getElementById("DevTable").innerHTML = "";     
+        document.getElementById("dvCustomersGrid").innerHTML = "";     
         createPageList();
         addPageList = countList.slice(currentStartingPoint, currentEndingPoing);
        
@@ -152,15 +144,15 @@ function getCountOfPages() {
             
             for(j=0; j<length; j++){
                 // console.log(data.table.rows[j].c[6].v)
-                let compare =data.table.rows[j].c[5].v
+                // let compare =data.table.rows[j].c[4].v
                 
                 
-                if(compare == getCode()){
+                // if(compare == getCode()){
         
                     // console.log("The following data from excel : ",data.table.rows[j].c[6].v)
                     countNumber=countNumber+1;
                     // console.log("This is the number", countNumber)
-                }
+                // }
          }
          return countNumber;
         }
@@ -171,7 +163,7 @@ function getCountOfPages() {
         CheckListbutton=document.getElementById("first")
         CheckListbutton.addEventListener("click", function(){
             if(getCode()=="" && CheckListbutton.disabled==false){
-                document.getElementById("error").innerHTML="you need first to Select the year!!"
+                document.getElementById("error").innerHTML="Answer the question first!"
                 return false
             }
             if(getCode()!="" && CheckListbutton.disabled==false){
@@ -184,37 +176,32 @@ function getCountOfPages() {
 
     //function for adding numbers to each page
     function createPageList() {
+        let number =parseInt(getCode())
         
-        if(countOfstudents()==0){
-            console.log(code.innerHTML)
-            document.getElementById("error").innerHTML=`No data we have for ${code.value}`
-                // return false 
+        if(number!=10){
+            document.getElementById("error").innerHTML="Wrong answer, check again!"
+                return false 
         }
         else{
-        // document.getElementById("DevTable").innerHTML = "";
+        // document.getElementById("dvCustomersGrid").innerHTML = "";
 
         let index;
        
         initialStudent=0;
         let tatal =countOfstudents()
-
-        var tbody = document.createElement("tbody");
-
-
-
         // console.log("This is the cound=t number of the students", tatal);
         for (i = 0; i<length; i++) {
                 //Add the data row.
                
                 // var row = document.createElement("tr");
               
-                let compare =data.table.rows[i].c[5].v
+                let compare =data.table.rows[i].c[4].v
                 
 
                 code =document.getElementById('code').innerHTML
                 // console.log("The data from excel : ",data.table.rows[i].c[6].v)
-                if(compare == getCode())
-                {
+                // if(compare == getCode())
+                // {
                     initialStudent +=1;
                     // keep the value for making the list
                     index =i 
@@ -224,40 +211,28 @@ function getCountOfPages() {
 
                 var row = table.insertRow(-1);
                 var headerCell = document.createElement("td");
-                headerCell.setAttribute('data-label',"#");
                 headerCell.innerHTML = datas
                 row.appendChild(headerCell);
 
-
-
-
-
                 var headerCell = document.createElement("td");
-                headerCell.setAttribute('data-label',"Event Name");
                 headerCell.innerHTML = data.table.rows[i].c[1].v;
                 row.appendChild(headerCell);
 
                 headerCell = document.createElement("td");
-                headerCell.setAttribute('data-label',"Students");
                 headerCell.innerHTML = data.table.rows[i].c[2].v;
                 row.appendChild(headerCell);
 
                 headerCell = document.createElement("td");
-                headerCell.setAttribute('data-label',"Ranked");
                 headerCell.innerHTML = data.table.rows[i].c[3].v;
                 row.appendChild(headerCell);
 
-
                 headerCell = document.createElement("td");
-                headerCell.setAttribute('data-label',"Award");
                 headerCell.innerHTML = data.table.rows[i].c[4].v;
                 // headerCell.innerHTML = 'xx';
                 row.appendChild(headerCell);
-                var headerCell = document.createElement("td");
-                headerCell.classList.add('empty');
-                row.appendChild(headerCell);
 
-                        }
+    
+                        // }
 
                     }
                    let style= document.getElementById("school");
@@ -268,13 +243,13 @@ function getCountOfPages() {
                 
 
                     // school informations
-                    // document.getElementById("schoolname").innerHTML=data.table.rows[index].c[12].v;
+                    // document.getElementById("schoolname").innerHTML=data.table.rows[index].c[4].v;
                     // document.getElementById("teachername").innerHTML=data.table.rows[index].c[9].v;
                     // document.getElementById("districtname").innerHTML=data.table.rows[index].c[7].v;
                     // document.getElementById("sectorname").innerHTML=data.table.rows[index].c[8].v;
-                    document.getElementById("snumber").innerHTML=getCode()
-                    document.getElementById("snumberIMO").innerHTML=getCode()
-                    var dvTable = document.getElementById("DevTable");
+                    document.getElementById("snumber").innerHTML=initialStudent
+
+                    var dvTable = document.getElementById("dvCustomersGrid");
                     dvTable.innerHTML = "";
                     dvTable.appendChild(table);
                     findTrs()
@@ -297,7 +272,6 @@ function getCountOfPages() {
 
     // getting the size of table.
 
-//  redrecting a link after click:
 
 
 
@@ -305,9 +279,8 @@ function getCountOfPages() {
         function cleaning(){
             // loadMyPaginationList();
             location.reload()
-            document.getElementById("DevTable").innerHTML=" "
+            document.getElementById("dvCustomersGrid").innerHTML=" "
             document.getElementById("school").innerHTML=" "
-            console.log(code)
          }
         //function for validating real time condition like if move to last page, last page disabled etc
         function validatePageCount() {
@@ -318,13 +291,3 @@ function getCountOfPages() {
         // document.getElementById("last").disabled = presentPage == countOfPages ? true : false;
         }
 
-        
-        document.getElementById("snumberIMOs").addEventListener("click",
-
-            ()=>{
-                let link1="https://www.imo-official.org/team_r.aspx?code=RWA&year="
-                let link2 =`${getCode()}`
-                let combinedLink = link1+link2;
-                window.location.href = combinedLink;
-            }
-        )

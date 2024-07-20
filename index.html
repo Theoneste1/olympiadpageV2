@@ -1104,7 +1104,7 @@
 
 
 
-                        <div class="row CALENDAR" style="background-color: yellow;">
+                        <div class="row CALENDAR">
  
                             <div class="col-lg-4 col-md-4 col-12 event">
 
@@ -1868,9 +1868,24 @@ These accomplishments underscore Rwanda's dedication to nurturing mathematical t
                             <h3>Check Rwanda yeary team Results </h3>
 
                                                 <!-- <input type="text" id="code", placeholder="Enter the code here"> -->
-                                                <p id="code">2024</p>
+                                                <p id="error"></p>
                                                 <br>
                                                 <br>
+                                                
+                                                 <!-- <input id="code" style="background-color: red; width: 100px;" type="text" id="code", placeholder="Year"> -->
+                                                 <div id="select" class="custom-select" style="width:200px;">
+                                                 <select id="code">
+                                                    <option value="0">Select Year:</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2022">2021</option>
+                                                    <option value="2023">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option>
+                
+                                                  </select>
+                                                </div>
+
+
                                                 <input type="button" id="first" onclick="getFirstPage()" value="Show Info" />
                                                 <!-- <input type="button" id="next" onclick="getNextPage()" value="next" />
                                                 
@@ -1882,19 +1897,18 @@ These accomplishments underscore Rwanda's dedication to nurturing mathematical t
                                                 <!-- <div id="countList" style="background-color: red;"></div> -->
                                             </div>
                                             <div id="school" class="remove">
-                                                <div class="navigate">
-                                                    <button  style="padding: 10px;" id="previous" class="previous">&laquo; Previous</button>
-                                                    <button style="padding: 10px;" id="next" class="next">Next &raquo;</button>
-                                                </div>
-                                                
-
+                                               
                                                 <h3 span style="text-align: center;">RWANDA MATHEMATICS OLYMPIAD STATISTICS :: <span id="snumber"></span><br></h3> 
 
-                                            
-
-                                               
                                                 <div class="table" id="DevTable"></div>
-                                
+
+                                                <h3 id="snumberIMOs" span style="text-align: center;"> Check our performance from IMO <span id="snumberIMO"></span><br></h3> 
+
+                                                <div class=" division">
+                                                    <input type="button" id="ClearTables" onclick="cleaning()" value="Clear" />
+                                                </div>
+                                                
+                                                
                                            
                                             </div>
                                                  
@@ -2158,11 +2172,12 @@ These accomplishments underscore Rwanda's dedication to nurturing mathematical t
                                         <p>Rwanda Olympiad students pass through different Mathematics Test rounds</p>
                                     </div>
                                 </div> -->
-                                <p>1. Juniors RESOURCES && Past Papers :<a href="Olympiad-Juniors-Past-papers.html">Click Here JRMC</a>  </p>
-                                <p>2. Senior  RESOURCES && Past Papers :<a href="Olympiad-Seniors-Past-papers.html">Clcik here SRMC</a> </p>
-                                <P>3. Check Round3 Sites : <a href="resultsrmc2024CENTERS.html">Click here ROUND3 Sites</a></P>
-                                <p>4. Check Round3 Junior Results :<a href="resultsrmc2024.html">Click here ROUND3 </a> </p>
-                                <p>5. Check Round3 Senior Results :<a href="https://drive.google.com/file/d/1TlO1E9Qjm2abKVLL65Pk9owVoNyNugKH/view?usp=sharing">Click here ROUND3 </a> </p>
+                                <p>1. Juniors Resources :<a href="Olympiad-Juniors-Past-papers.html">Here</a>  </p>
+                                <p>2. Senior  Resources  :<a href="Olympiad-Seniors-Past-papers.html">here</a> </p>
+                                <P>3. Round3 Sites : <a href="resultsrmc2024CENTERS.html">here </a></P>
+                                <p>4. Round3 Junior Results :<a href="resultsrmc2024.html">here </a> </p>
+                                <p>5. Round3 Senior Results :<a href="https://drive.google.com/file/d/1TlO1E9Qjm2abKVLL65Pk9owVoNyNugKH/view?usp=sharing">here</a> </p>
+                                <p>6. Summer camp One Students :<a href="camp12024.html">here</a> </p>
 
                                  </div>
                            </div>
