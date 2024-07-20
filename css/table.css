@@ -27,10 +27,20 @@ th{
 }
 #tables tr:nth-child(even){background-color: #f2f2f2;}
 
+
+
+.division{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* responsivness */
 @media only screen and (max-width: 900px){
     button{
         width: 100%;
+        font-size: 13px;
         justify-content: center;
         
     }
@@ -38,13 +48,13 @@ th{
     table{
         width: 100%;
     }
-    thead{
+    thead, th{
         display: none;
     }
     table td{
         display: block;
         text-align: right;
-        font-size: 16px;
+        font-size: 13px;
        
     }
    
@@ -52,7 +62,7 @@ th{
     td::before{
         content: attr(data-label);
         float: left;
-        font-size: 20px;
+        font-size: 13px;
         
     }
     .empty{

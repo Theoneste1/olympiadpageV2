@@ -209,7 +209,7 @@ p{
     font-weight: 400;
     margin-bottom: 24px;
 }
-.section-title-wrapper { margin-bottom: 87px; position: relative;}
+.section-title-wrapper { margin-bottom: 30px; position: relative;}
 .section-title-wrapper:before {
     background: #2d3e50 none repeat scroll 0 0;
     bottom: 0;
@@ -1227,6 +1227,7 @@ p{
 .footer-logo{
     background-color: white;
     display: flex;
+    height: 100px;
     justify-content: center;
     align-items: center;
     width: 290px;
@@ -3346,7 +3347,18 @@ text-decoration: underline;
 
 .link a{
     color: green;
+    font-size: 15px;
     font-weight: 400;
+}
+.link{
+    margin-bottom: 50px;
+}
+.link p, a{
+    font-size: 15px;
+    /* background-color:blue; */
+    margin-top: -5px;
+    margin-bottom: 0px;
+    
 }
 
 .vision,.mission,.value{
@@ -3427,7 +3439,7 @@ text-decoration: underline;
 
 .logrow{
   
-    margin-top: -50px;
+    /* margin-top: 0px; */
   
 }
 .CALENDAR h4{
@@ -3621,7 +3633,18 @@ text-decoration: underline;
   }
 
   
- 
+
+#snumberIMOs {
+    color: blue; /* Link color */
+    text-decoration: underline; /* Underline text */
+    cursor: pointer; /* Pointer cursor */
+}
+
+#snumberIMOs:hover {
+    color: darkblue; /* Change color on hover */
+}
+
+
 
 
   
