@@ -178,7 +178,7 @@ function getCountOfPages() {
     function createPageList() {
         let number =parseInt(getCode())
         
-        if(number!=10){
+        if(number!=100){
             document.getElementById("error").innerHTML="Wrong answer, check again!"
                 return false 
         }
