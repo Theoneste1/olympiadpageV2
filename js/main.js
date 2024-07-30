@@ -195,3 +195,19 @@ $('.popup-youtube').magnificPopup({
     
     
 })(jQuery); 
+
+
+function time()
+{
+let obj = new Date(); 
+let day = obj.getUTCDate(); 
+let month = obj.getUTCMonth() + 1; 
+let year = obj.getUTCFullYear(); 
+let d=`Today: ${day}/ ${month} / ${year}`;
+  
+    // d=d.Date()
+    document.getElementById("time").innerHTML = d;
+}
+time();
+
+
