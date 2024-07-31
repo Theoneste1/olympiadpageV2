@@ -1,0 +1,64 @@
+/* body {
+    font-family: Arial, sans-serif;
+    /* line-height: 1.6; 
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+
+
+section.week {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    /* width: 300px; 
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 15px;
+    /* height: 1; 
+}
+
+h3 {
+    color: #666;
+    font-size: 15px;
+    
+}
+
+.paragraph{
+    background-color: white;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+p {
+    margin: 0;
+    /* padding: 0.5rem 0; 
+}
+.courseSelf{
+    background-color: #696969;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+a{
+    color: blue;
+    cursor: pointer;
+    font-size: 13px;
+}
+.courseSelf p{
+    color: #2d3e50;
+    width: 100%;
+
+}
