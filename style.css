@@ -1614,7 +1614,7 @@ border-radius: 6px;
     border-width: 28px 15px;
     content: "";
     height: 5px;
-    left: -30px;
+    left: -29px;
     position: absolute;
     top: 0;
     width: 0;
@@ -3633,7 +3633,7 @@ text-decoration: underline;
   }
   ul a{
 
-    font-size: 13px;
+    font-size: 15px;
   }
 
   
@@ -3667,6 +3667,10 @@ text-decoration: underline;
 
 .single-event-item{
     /* background-color: red; */
+}
+
+ol{
+    list-style: block;
 }
 
 
