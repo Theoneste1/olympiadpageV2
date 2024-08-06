@@ -62,3 +62,19 @@ a{
     width: 100%;
 
 }
+
+.courseSelf a{
+    background-color: #08498e;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.courseSelf a:hover{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 2px 0 20px rgba(34, 30, 31, 0.2);
+    /* transition: all 0.3s ease 0s; */
+
+}

@@ -228,7 +228,10 @@ function getCountOfPages() {
                 headerCell.innerHTML = datas
                 row.appendChild(headerCell);
 
-
+                console.log("CHECKING THE ERROR!");
+console.log("checking the error:",data.table.rows[i].c[1].v);
+console.log("checking the error:",data.table.rows[i].c[3].v);
+console.log("Checking the IMO logs",data.table.rows[i].c[2].v);
 
 
 
