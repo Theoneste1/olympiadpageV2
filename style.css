@@ -3409,9 +3409,27 @@ text-decoration: underline;
     height: 100%;
 }
 
+.single-goals{
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(34, 30, 31, 0.3);
+    background-color:#34495E;
+    border-top: 5px solid rgba(34, 30, 31, 0.3);
+    border-color: #34495E;
+
+}
+
 .olympiad{
     
     color: white;
+}
+
+#moreBTN{
+    
+    border-radius: 5px;
+    background-color: rgb(30, 130, 163);
+    color:white;
+    padding: 10px;
+    width: fit-content;
 }
 
 
