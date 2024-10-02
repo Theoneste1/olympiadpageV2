@@ -3415,6 +3415,7 @@ text-decoration: underline;
     background-color:#34495E;
     border-top: 5px solid rgba(34, 30, 31, 0.3);
     border-color: #34495E;
+    
 
 }
 
@@ -3430,6 +3431,7 @@ text-decoration: underline;
     color:white;
     padding: 10px;
     width: fit-content;
+    margin-left: 45%;
 }
 
 
