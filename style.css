@@ -3697,4 +3697,11 @@ ol{
     /* color: red; */
     /* background-color: green; */
 }
+
+.hidden {
+    display: none; /* Hides the element */
+}
+.visible {
+    display: block; /* Makes the element visible */
+}
   
