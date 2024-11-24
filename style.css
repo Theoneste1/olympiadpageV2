@@ -3705,3 +3705,12 @@ ol{
     display: block; /* Makes the element visible */
 }
   
+
+
+
+
+
+/* Invitation selection text */
+b, strong {
+    font-weight: bold;
+}
