@@ -228,7 +228,7 @@ function getCountOfPages() {
                 row.appendChild(headerCell);
 
                 headerCell = document.createElement("td");
-                headerCell.innerHTML = data.table.rows[i].c[6].v;
+                headerCell.innerHTML = data.table.rows[i].c[4].v;
                 // headerCell.innerHTML = 'xx';
                 row.appendChild(headerCell);
 
