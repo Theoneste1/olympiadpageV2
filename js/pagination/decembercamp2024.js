@@ -1,7 +1,7 @@
 let SHEET_ID = '1_goCAnx9eFbY_hBHQpUggbWYQKWuKZrUPWP8s8zgpIM'
 // let SHEET_TITLE = 'teachers';
 let SHEET_TITLE = 'MathCampInvites';
-let SHEET_RANGE = 'A1:L41'
+let SHEET_RANGE = 'A1:L71'
 
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/'+ SHEET_ID +'/gviz/tq?sheet='+SHEET_TITLE +'&range='+SHEET_RANGE);
 
