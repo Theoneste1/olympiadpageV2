@@ -243,7 +243,7 @@ function getCountOfPages() {
                     document.getElementById("schoolname").innerHTML=data.table.rows[index].c[4].v;
                     document.getElementById("teachername").innerHTML=data.table.rows[index].c[3].v;
                     document.getElementById("districtname").innerHTML=data.table.rows[index].c[6].v;
-                    document.getElementById("sectorname").innerHTML=data.table.rows[index].c[8].v;
+                    document.getElementById("sectorname").innerHTML=data.table.rows[index].c[7].v;
                     document.getElementById("snumber").innerHTML=initialStudent
 
                     var dvTable = document.getElementById("dvCustomersGrid");
